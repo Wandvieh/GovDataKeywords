@@ -43,8 +43,8 @@ I did have prior experience wiht Python, SQL, and some of the libraries before w
 
 ### What could have been done better
 - Downloading the keywords: The way I download, is that I download all dcat:Dataset (s) that have a dct:title, at least one dcat:keyword AND an dct:identifier. The problem with this: The identifier is not obligatory. So all datasetes without an identifier are left behind
-- Tokenization: There might be an error with the tokenization. I get keywords like "_gemeinden", but I'm not sure those should be in there. It might have to do with the way I handled the keywords: Any space characters, I replaced with "_" so they wouldn't be torn apart
-- The CBOW model: Honestly, I straight up used some model on the internet for this because this still confuses me. Up to this day, I couldn't say if I did this properly
+- Tokenization: There might be an error with the tokenization. I get keywords like "\_gemeinden", but I'm not sure those should be in there. It might have to do with the way I handled the keywords: Any space characters, I replaced with "\_" so they wouldn't be torn apart
+- The CBOW model: I straight up used some model on the internet for this because this still confuses me. Up to this day, I couldn't say if I did this properly
 - Again the CBOW model: Maybe this wasn't the best choice. I want every keyword to be trained with every other keyword in its dataset. Either use a different model for that or increase window size to 720 (the maximum number of keywords in a dataset). Maybe should've used Skipgram?
-- Dimenisonality: I only did an embedding size of 2 (= 2-dimensional vector), which I'm strongly suspecting to have been a mistake. I haven't yet tried more dimensions, since training took quite a while and I've not been in the mood to do it again yet
+- Dimensionality: I only did an embedding size of 2 (= 2-dimensional vector), which I'm strongly suspecting to have been a mistake. I haven't yet tried more dimensions, since training took quite a while and I've not been in the mood to do it again yet
 - DBSCAN / Epsilon: I might have not chosen this properly. I used an internet tutorial for how to choose this, but either there was some mistake or my data really is just that wonky
