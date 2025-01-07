@@ -4,6 +4,10 @@ A script for downloading all the keywords from GovData and plotting them in a 2D
 ![GovData keywords in a 2D space](https://github.com/user-attachments/assets/6604530a-53b8-4bb8-9cfc-86756e499ee7)
 *All GovData keywords in a 2D coordinate system*
 
+![GovData Datasets in a 2D space](https://github.com/user-attachments/assets/217ae235-6ddb-4d5b-bd73-425507ed12f8)
+*All GovData Datasets that have keywords in a 2D coordinate system (more to come on this, I've only just finished it)*
+
+
 ## Overview
 This python script downloads ALL keywords from all datasets from GovData.de from the beginning until 20.09.2023 that have a title and an identifier. I sorted those into various csv files, most importantly into corpus.csv, which lists all the keywords for every dataset. I used this to tokenize all the keywords. Then I built a CBOW-model ("continuous bag of words"-model, specs see below). I then trained the tokenized words in several epochs (again, see more below). Lastly, I visualized the results and played around a bit with DBSCAN to try to make sense of it (spoiler: I found very little).
 
