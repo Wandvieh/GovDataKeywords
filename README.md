@@ -2,10 +2,10 @@
 A script for downloading all the keywords from GovData and plotting them in a 2D space using word embedding
 
 ![GovData keywords in a 2D space](https://github.com/user-attachments/assets/6604530a-53b8-4bb8-9cfc-86756e499ee7)
-*All GovData keywords in a 2D coordinate system*
+*All GovData keywords in an interactive map. If you want to click around, download "Keywords.html"*
 
 ![GovData Datasets in a 2D space](https://github.com/user-attachments/assets/217ae235-6ddb-4d5b-bd73-425507ed12f8)
-*All GovData Datasets that have keywords in a 2D coordinate system (more to come on this, I've only just finished it)*
+*All GovData Datasets that have keywords in an interactive map. If you want to click around, download "Datasets.html" (more to come on this, I've only just finished it)*
 
 
 ## Overview
