@@ -9,7 +9,7 @@ A script for downloading all the keywords from GovData and plotting them in a 2D
 
 
 ## Overview
-This python script downloads ALL keywords from all datasets from GovData.de from the beginning until 20.09.2023 that have a title and an identifier. I sorted those into various csv files, most importantly into corpus.csv, which lists all the keywords for every dataset. I used this to tokenize all the keywords. Then I built a CBOW-model ("continuous bag of words"-model, specs see below). I then trained the tokenized words in several epochs (again, see more below). Lastly, I visualized the results and played around a bit with DBSCAN to try to make sense of it (spoiler: I found very little).
+This python script downloads all keywords from all datasets from GovData.de from the beginning until 20.09.2023 that have a title and an identifier. I sorted those into various csv files, most importantly into corpus.csv, which lists all the keywords for every dataset. I used this to tokenize all the keywords. Then I built a CBOW-model ("continuous bag of words"-model, specs see below). I then trained the tokenized words in several epochs (again, see more below). Lastly, I visualized the results and played around a bit with DBSCAN to try to make sense of it (spoiler: I found very little).
 
 From the website (https://www.govdata.de/web/guest/hilfe): "GovData, the data portal for Germany, offers uniform, centralized access to administrative data from the federal, state and local governments as well as data from public service companies, universities, researchers, research institutions and research funding bodies. The aim is to make it easier to find and use this data in one place."
 
